@@ -18,8 +18,8 @@
             <nav class="menu">
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
-                    <li><a href="https://www.linkedin.com/in/andr%C3%A9-moreira-996b181b8/">Linkedin</a></li>
-                    <li><a href="https://github.com/andresilvm">Projetos</a></li>
+                    <li><a href="https://www.linkedin.com/in/andr%C3%A9-moreira-996b181b8/" target="_blank">Linkedin</a></li>
+                    <li><a href="https://github.com/andresilvm" target="_blank">Projetos</a></li>
                     <li><a href="#">Sobre</a></li>
                 </ul>
             </nav>
@@ -31,20 +31,27 @@
         </div>
     </header>
     <div class="perfil">
-        <form action="">
+        <form action="https://formsubmit.co/andreluiz.moreira@hotmail.com" method="post">
+            <h1>Formulario de Contato</h1>
+            <input type="hidden" name="_next" value="http://127.0.0.1:5501/sucesso.html">
+            <input type="hidden" name="_captcha" value="false">
             <label for="nome">Nome</label>
-            <input class="campo" type="text" id="nome" placeholder="Digite seu nome" required>
+            <input class="campo" name="nome" type="text" id="nome" placeholder="Digite seu nome" required>
             <label for="email">Email</label>
-            <input class="campo" type="email" id="email" placeholder="exemplo@gmail.com" required>
+            <input class="campo" name="email" type="email" id="email" placeholder="exemplo@gmail.com" required>
             <label for="celular">Telefone</label>
-            <input class="campo" for="celular" type="tel" id="celular" placeholder="Digite um telefone para contato">
+            <input class="campo" name="celular" for="celular" type="tel" id="celular" placeholder="Digite um telefone para contato">
             <label for="">Descreva o motivo do seu contato</label>
-            <select class="campo" name="select">
-                <option value="valor1">Gostaria de um projeto free lancer</option>
-                <option value="valor2" selected>Oportunidade de Emprego</option>
-                <option value="valor3">Troca de ideias</option>
-              </select>
-            <button>Enviar</button>
+            <select name="Motivo do Contato" class="campo" name="select">
+                <option value="Projeto Free Lancer">Gostaria de um projeto free lancer</option>
+                <option value="Oportunidade de Emprego" selected>Oportunidade de Emprego</option>
+                <option value="Trocar ideia">Troca de ideias</option>
+            </select>
+            <div class="btn-enviar">
+                <a href="#">
+                    <button type="submit">Enviar</button>
+                </a>
+            </div>
         </form>
     </div>
 </body>
